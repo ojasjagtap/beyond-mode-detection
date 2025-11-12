@@ -94,17 +94,17 @@ jupyter notebook rtree.ipynb
 route_index, gtfs_routes = gen_rtree()
 
 # 3. Load your GPS trajectory data
-trip = pd.read_csv("trajectory.csv")  # columns: timestamp, tripIdPk, lat, lon
+trip = pd.read_csv("trajectory.csv")                            # columns: timestamp, tripIdPk, lat, lon
 
 # 4. Process trajectory through the pipeline
-pfs = generate_pfs(trip)                              # Preprocess & segment
+pfs = generate_pfs(trip)                                        # Preprocess & segment
 matched_routes = match_all_legs(pfs, gtfs_routes, route_index)  # Match routes
-seg_data = gen_seg_data(matched_routes)               # Identify stops
-merged = merge_segments(seg_data)                     # Merge segments
+seg_data = gen_seg_data(matched_routes)                         # Identify stops
+merged = merge_segments(seg_data)                               # Merge segments
 
 # 5. View results
-itinerary_df = gen_seg_df(merged)                     # Summary table
-map_viz = plot(merged)                                # Interactive map
+itinerary_df = gen_seg_df(merged)                               # Summary table
+map_viz = plot(merged)                                          # Interactive map
 ```
 
 ### Input Data Format
