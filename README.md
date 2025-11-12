@@ -18,11 +18,11 @@ Traditional mobility analysis focuses on broad mode detection (walk/bus/rail), b
 
 ### Key Features
 
-✅ **R-tree spatial indexing** for efficient route matching
-✅ **LCSS-based trajectory similarity** robust to GPS noise
-✅ **~80% accuracy** on real-world crowdsourced GPS data
-✅ **Stop-level resolution** for boarding/alighting identification
-✅ **Automatic segment merging** to reconstruct continuous rides
+✅ **R-tree spatial indexing** for efficient route matching  
+✅ **LCSS-based trajectory similarity** robust to GPS noise  
+✅ **~80% accuracy** on real-world crowdsourced GPS data  
+✅ **Stop-level resolution** for boarding/alighting identification  
+✅ **Automatic segment merging** to reconstruct continuous rides  
 ✅ **Multi-modal support** (bus, rail, metro, walking)
 
 ## Algorithm Pipeline
@@ -281,15 +281,21 @@ This algorithm enables:
 If you use this code in your research, please cite:
 
 ```bibtex
-@inproceedings{jagtap2025beyond,
-  author = {Jagtap, Ojas and Awasthi, Naman and Jain, Mohit and Abrar, Saad Mohammad and Fr\'ias-Mart\'inez, Vanessa},
+@inproceedings{10.1145/3764924.3770890,
+  author = {Jagtap, Ojas and Awasthi, Naman and Jain, Mohit and Abrar, Saad Mohammad and Fr\'{\i}as-Mart\'{\i}nez, Vanessa},
   title = {Beyond Mode Detection: Reconstructing Detailed Transit Itineraries from Crowdsourced GPS Trajectories},
-  booktitle = {Proceedings of the 1st ACM SIGSPATIAL International Workshop on Spatial Intelligence for Smart and Connected Communities},
-  series = {SpatialConnect '25},
   year = {2025},
-  location = {Minneapolis, MN, USA},
+  isbn = {9798400721878},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3764924.3770890},
   doi = {10.1145/3764924.3770890},
-  publisher = {ACM}
+  booktitle = {Proceedings of the 1st ACM SIGSPATIAL International Workshop on Spatial Intelligence for Smart and Connected Communities},
+  pages = {35–38},
+  numpages = {4},
+  keywords = {transit itinerary reconstruction, GTFS spatial indexing, multi-modal trajectory analysis, urban mobility equity},
+  location = {The Graduate Hotel Minneapolis, Minneapolis, MN, USA},
+  series = {SpatialConnect '25}
 }
 ```
 
